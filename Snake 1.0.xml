@@ -1,0 +1,474 @@
+<snapdata><project name='Snake 1.0' app='Snap! 5.1, http://snap.berkeley.edu' version='1'>
+  <notes>Classic snake game                                                                             Play by pressing the spacebar, move by using the arrow keys.</notes>
+  <thumbnail>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAB4CAYAAAB1ovlvAAAHSElEQVR4Xu2bX0iVZxzHv8fjn/nfqVlqqZPUbW1kuSQWDbYY4aBtF2HsZtCFroLGxoLBxqYLgi7a2AYx203QhRtBsKsYhbk/MXNUVBcDFW2ZqWlLRfO/x/G8o9NOR/TEdwef9XzfG+P0/t7n9/t8Pz3v+x7MNz8/Pw8dIrBMBHwPC3j58mUUFhbC7/f/5y3Nzc2hu7sbGzZsWPDak5OTuHLlCu7evRvx2snJyYiPj1/y/MHb/YiNT0BWVhby8vKwZs2aJWt0QvQJhAjY1NTkyRfpkZCQgNu/fo++iz9idnJ80bK1Tz+LtDc+xczMDG7cuIFt27aFnd/c3Iz8/PxIl0dKSgrO172O52N74ff5Fq3LyC/G1NuNmJiYwODgIEpLS7FixYqI19KJ0SEQFLC1tRWpqakwd2SfzxfRz+zsLHR8WI7ylQ92oLjKtxD460/MdbaEdTxx4BIGBga864+NjaGysjJ4Tk9PD4aGhoJrHz9+HLt370ZHRwdKSkoW7CkxIR6BL19GbsqD3dpf+AL8a1/EdNPXYeuPf3DRW9/MOD09jYqKiuhQ1VUjJhAU0AhgdgZznD17FmVlZRgeHkZaWhr6+/vR1dWFVatWeX+enZ1FTU0NMjMzMXKwAvmpobfrhDcPYeqHj8OaGHv/d/T19Xmf5+TkhOx2ZvfNyMgI1pw8eRLV1dVobGyE6W39+vU4deoUtm/fjpaWFhw5cgQpSYmIO/oqcpIfrB//yn7A51tQwNH3WtHb2xtcX7fhiD2J2olBATs7O3Hnzh1voWvXrqG2thaHDx+GeS4zO5YRsKqqClevXvWeuXbt2uXJOXaoMkTAxJrvMNvWjJlfvg1reuTdFk8mc5jbX3FxcfAcc1u+L4f58PTp09i0aZP3LGrWNLtlIBDwdjCz7rp16zA1cQ9PNFSFCIiYWPgLKzB3vTVs/eH9v+HmzZve52amzZs3Rw2sLhwZgaCA5uXD3BZNMOYoKCjwXhju/1y9ejVGR0cxMjLiPcQbWZ7MSEfisdewMjkmotUG3vkJt27d8s5NSkoKuwWaHS47Ozuia3knBebwTPMBJE398w9nsSMm+ym0v/qV17/Z6bds2YLc3NylyvT3USYQ8hJiBDACpqenR7xsgX8Ic20/L3m+v/QldAcyPQHMTrZz586wmvHxcZw5c8Z7SYn0OdS81UbSr3mzNo8URrry8nLvJUTH8hMI+xrGhHThwgXvbXWh4+GXlEcZIS4uzrvt/ftZ71Hqde7jRyBMwMdvRE1kMwEJaHM6DvQmAR0I2eYRJaDN6TjQmwR0IGSbR5SANqfjQG8S0IGQbR5RAtqcjgO9SUAHQrZ5RAloczoO9CYBHQjZ5hEloM3pONCbBHQgZJtHlIA2p+NAbxLQgZBtHlEC2pyOA71JQAdCtnlECWhzOg70JgEdCNnmESWgzek40JsEdCBkm0eUgDan40BvEtCBkG0eUQLanI4DvUlAB0K2eUQJaHM6DvQmAR0I2eYRJaDN6TjQmwR0IGSbR5SANqfjQG8S0IGQbR5RAtqcjgO9SUAHQrZ5RAloczoO9CYBHQjZ5hEloM3pONCbBHQgZJtHlIA2p+NAbxLQgZBtHlEC2pyOA71JQAdCtnlECWhzOg70JgEdCNnmESWgzek40JsEdCBkm0eUgDan40BvEtCBkG0eUQLanI4DvUlAB0K2eUQJaHM6DvQmAR0I2eYRJSCZzokTo7h+fS7sKnV1GeSV3SiXgGTOW7f24Pz52ZCr+HxAIFBEXtmNcglI5iwBOYASkOMHCcgBlIAcPwlI8pOAJEDtgBxACcjxUzVJQAKSAM3XMOfOTYVcpagoFvX1+homErQSMBJKi5yzd+8gGhruhZyxcWM8Ll3KI6/sRrkEJHOWgBxACcjxgwTkAEpAjp8EJPlJQBKgXkI4gBKQ46dqkoAEJAHqGZADKAE5fnoGJPlJQBKgdkAOoATk+GkHJPlJQBKgdkAOoATk+KGlZRJtbaG/EZ2VFYMdO5LIK7tRLgHJnG0QsOvE5/jjiwNhkzz30VEUVe8jJ4xuuQQk+dpwC25v+AztDfVhk5TuqUfpnjpywuiWS0CSrwTkAEpAjp8Vb8HaAckQ/8/l2gG59LQDcvzs2AGPHUT7N+HPemX7DqKk9hNywuiWS8Do8tXVlyAgAUlF9OtYHEAJyPGz4hZMjrCs5RKQxG/DSwg5wrKWS0ASvwTkAEpAjp9uwSQ/CUgC1EsIB1ACcvxUTRKQgCRAPQNyACUgx0/PgCQ/CUgC1A7IAZSAHD/tgCQ/CUgC1A7IAZSAHD/9nxCSnwQkAaqcIyABOX6qJglIQBKgyjkCEpDjp2qSgAQkAaqcIyABOX6qJglIQBKgyjkCEpDjp2qSgAQkAaqcIyABOX6qJglIQBKgyjkCEpDjp2qSgAQkAaqcIyABOX6qJglIQBKgyjkCEpDjp2qSgAQkAaqcIyABOX6qJglIQBKgyjkCEpDjp2qSwN+gxT3VkjntOQAAAABJRU5ErkJggg==</thumbnail>
+  <stage inheritance='true' id='1' volume='100' height='360' tempo='60' lines='round' width='480' name='Stage' sublistIDs='false' threadsafe='false' codify='false' color='255,255,255,1' scheduled='true' pan='0' ternary='true' costume='0'>
+    <pentrails>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAFoCAYAAACPNyggAAASzUlEQVR4Xu3asY1d1xWF4XMBR6yCBbgIlaLEqZUrIRlYuTpQKWzBHagKZcYzxnBkU8KQc/XWXud8BJyRc/b99gZ+jKFr+UOAAAECBAg8XeB6+oseJECAAAECBJYAOwICBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAAuicJECBAgIAAuwECBAgQIBAQEOAA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</pentrails>
+    <costumes>
+      <list id='2' struct='atomic'/>
+    </costumes>
+    <sounds>
+      <list id='3' struct='atomic'/>
+    </sounds>
+    <variables/>
+    <blocks/>
+    <scripts/>
+    <sprites>
+      <sprite x='10' pen='tip' id='8' y='-10' name='Head' idx='1' volume='100' rotation='1' scale='0.8' heading='0' costume='1' color='80,80,80,1' pan='0' draggable='true'>
+        <costumes>
+          <list id='9'>
+            <item>
+              <costume center-x='11' image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAYAAAAvg9c4AAAANElEQVRIS2NkYDjvwEBlwMjAcP8/lc1kGDV0NEypnKZGk9RokhpNUtQMgaGVo/ZT0+sgswCzqygcksr76AAAAABJRU5ErkJggg==' center-y='11.75' name='square' id='10'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='11' struct='atomic'/>
+        </sounds>
+        <blocks/>
+        <variables/>
+        <scripts>
+          <script x='20' y='10'>
+            <block s='doSetVar'>
+              <l>trail</l>
+              <block s='reportNewList'>
+                <list/>
+              </block>
+            </block>
+          </script>
+          <script x='20' y='50'>
+            <block s='receiveKey'>
+              <l>
+                <option>space</option>
+              </l>
+            </block>
+            <block s='clear'/>
+            <block s='doSetVar'>
+              <l>Lives</l>
+              <l>5</l>
+            </block>
+            <block s='doSetVar'>
+              <l>score</l>
+              <l>0</l>
+            </block>
+            <block s='doDeleteFromList'>
+              <l>
+                <option>all</option>
+              </l>
+              <block var='trail'/>
+            </block>
+            <block s='setScale'>
+              <l>80</l>
+            </block>
+            <block s='gotoXY'>
+              <l>10</l>
+              <l>-130</l>
+            </block>
+            <block s='setHeading'>
+              <l>0</l>
+            </block>
+            <block s='doInsertInList'>
+              <block s='reportNewList'>
+                <list>
+                  <block s='xPosition'/>
+                  <block s='yPosition'/>
+                </list>
+              </block>
+              <l>1</l>
+              <block var='trail'/>
+            </block>
+            <block s='doStamp'/>
+            <block s='doBroadcastAndWait'>
+              <l>set goal</l>
+            </block>
+            <block s='doBroadcast'>
+              <l>follow!</l>
+            </block>
+            <block s='doForever'>
+              <script>
+                <block s='forward'>
+                  <l>20</l>
+                </block>
+                <block s='doIfElse'>
+                  <block s='reportOr'>
+                    <block s='reportTouchingObject'>
+                      <l>
+                        <option>edge</option>
+                      </l>
+                    </block>
+                    <custom-block s='touching trail?'/>
+                  </block>
+                  <script>
+                    <block s='doChangeVar'>
+                      <l>Lives</l>
+                      <l>-1</l>
+                    </block>
+                    <block s='gotoXY'>
+                      <l>10</l>
+                      <l>-130</l>
+                    </block>
+                    <block s='setHeading'>
+                      <l>0</l>
+                    </block>
+                    <block s='clear'/>
+                    <block s='doIf'>
+                      <block s='reportEquals'>
+                        <block var='Lives'/>
+                        <l>0</l>
+                      </block>
+                      <script>
+                        <block s='doSayFor'>
+                          <l>Game over</l>
+                          <l>2</l>
+                        </block>
+                        <block s='doStopThis'>
+                          <l>
+                            <option>all</option>
+                          </l>
+                        </block>
+                      </script>
+                    </block>
+                  </script>
+                  <script>
+                    <block s='doInsertInList'>
+                      <block s='reportNewList'>
+                        <list>
+                          <block s='xPosition'/>
+                          <block s='yPosition'/>
+                        </list>
+                      </block>
+                      <l>1</l>
+                      <block var='trail'/>
+                    </block>
+                    <block s='doStamp'/>
+                    <block s='doIf'>
+                      <block s='reportTouchingObject'>
+                        <l>Target</l>
+                      </block>
+                      <script>
+                        <block s='doBroadcastAndWait'>
+                          <l>set goal</l>
+                        </block>
+                        <block s='doChangeVar'>
+                          <l>score</l>
+                          <l>1</l>
+                        </block>
+                      </script>
+                    </block>
+                  </script>
+                </block>
+                <block s='doWait'>
+                  <block s='reportQuotient'>
+                    <l>.3</l>
+                    <block s='reportSum'>
+                      <block var='score'/>
+                      <l>1</l>
+                    </block>
+                  </block>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='712'>
+            <block s='receiveKey'>
+              <l>
+                <option>up arrow</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>180</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>0</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='824'>
+            <block s='receiveKey'>
+              <l>
+                <option>right arrow</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>-90</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>90</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='936'>
+            <block s='receiveKey'>
+              <l>
+                <option>left arrow</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>90</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>-90</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='1048'>
+            <block s='receiveKey'>
+              <l>
+                <option>down arrow</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>0</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>180</l>
+                </block>
+              </script>
+            </block>
+          </script>
+        </scripts>
+      </sprite>
+      <sprite draggable='true' x='-130' pen='tip' id='181' y='-70' name='Eraser' idx='2' volume='100' rotation='1' scale='1' color='0,104.65199999999999,137.70000000000002,1' hidden='true' pan='0' heading='90' costume='1'>
+        <costumes>
+          <list id='182'>
+            <item>
+              <costume center-x='12.5' image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAAOklEQVRIS2NkYGBg+P///38QTU3ACAK0MBjmyFHDsUbXaLCMBgvx+Xg0tYymltHUQnwIDEBqoWUFDQDROlfH38EQsgAAAABJRU5ErkJggg==' center-y='11.75' name='square' id='183'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='184' struct='atomic'/>
+        </sounds>
+        <blocks/>
+        <variables/>
+        <scripts>
+          <script x='37' y='22'>
+            <block s='receiveMessage'>
+              <l>follow!</l>
+            </block>
+            <block s='setScale'>
+              <l>100</l>
+            </block>
+            <block s='hide'/>
+            <block s='doForever'>
+              <script>
+                <block s='doWaitUntil'>
+                  <block s='reportGreaterThan'>
+                    <block s='reportListLength'>
+                      <block var='trail'/>
+                    </block>
+                    <block s='reportSum'>
+                      <block s='reportProduct'>
+                        <block var='score'/>
+                        <l>5</l>
+                      </block>
+                      <l>5</l>
+                    </block>
+                  </block>
+                </block>
+                <block s='gotoXY'>
+                  <block s='reportListItem'>
+                    <l>1</l>
+                    <block s='reportListItem'>
+                      <l>
+                        <option>last</option>
+                      </l>
+                      <block var='trail'/>
+                    </block>
+                  </block>
+                  <block s='reportListItem'>
+                    <l>
+                      <option>last</option>
+                    </l>
+                    <block s='reportListItem'>
+                      <l>
+                        <option>last</option>
+                      </l>
+                      <block var='trail'/>
+                    </block>
+                  </block>
+                </block>
+                <block s='doStamp'/>
+                <block s='doDeleteFromList'>
+                  <l>
+                    <option>last</option>
+                  </l>
+                  <block var='trail'/>
+                </block>
+              </script>
+            </block>
+          </script>
+        </scripts>
+      </sprite>
+      <sprite x='110' pen='tip' id='228' y='-70' name='Target' idx='3' volume='100' rotation='1' scale='0.8' heading='90' costume='1' color='119.95200000000001,214.2,0,1' pan='0' draggable='true'>
+        <costumes>
+          <list id='229'>
+            <item>
+              <costume center-x='12.5' image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAAPElEQVRIS2NkYGBg2KzP8B9EUxP4XmRgZKSFwTBHjhqONbpGg2U0WIjPx6OpZTS1jKYW4kNgAFILLStoADX0K6sMlP9qAAAAAElFTkSuQmCC' center-y='11.75' name='square' id='230'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='231' struct='atomic'/>
+        </sounds>
+        <blocks>
+          <block-definition s='go to random position' category='motion' type='command'>
+            <header/>
+            <code/>
+            <translations/>
+            <inputs/>
+            <script>
+              <block s='gotoXY'>
+                <block s='reportDifference'>
+                  <block s='reportProduct'>
+                    <block s='reportRandom'>
+                      <l>-11</l>
+                      <l>12</l>
+                    </block>
+                    <l>20</l>
+                  </block>
+                  <l>10</l>
+                </block>
+                <block s='reportDifference'>
+                  <block s='reportProduct'>
+                    <block s='reportRandom'>
+                      <l>-8</l>
+                      <l>9</l>
+                    </block>
+                    <l>20</l>
+                  </block>
+                  <l>10</l>
+                </block>
+              </block>
+            </script>
+          </block-definition>
+        </blocks>
+        <variables/>
+        <scripts>
+          <script x='32' y='54'>
+            <block s='receiveMessage'>
+              <l>set goal</l>
+            </block>
+            <block s='setScale'>
+              <l>80</l>
+            </block>
+            <custom-block s='go to random position' scope='local'/>
+            <block s='doUntil'>
+              <block s='reportNot'>
+                <custom-block s='touching trail?'/>
+              </block>
+              <script>
+                <custom-block s='go to random position' scope='local'/>
+              </script>
+            </block>
+          </script>
+        </scripts>
+      </sprite>
+      <watcher x='7' color='243,118,29' style='normal' y='4.000001999999995' var='score'/>
+      <watcher x='104' color='243,118,29' style='normal' y='3' var='Lives'/>
+    </sprites>
+  </stage>
+  <hidden/>
+  <headers/>
+  <code/>
+  <blocks>
+    <block-definition s='touching trail?' category='sensing' type='predicate'>
+      <header/>
+      <code/>
+      <translations/>
+      <inputs/>
+      <script>
+        <block s='doReport'>
+          <block s='reportListContainsItem'>
+            <block var='trail'/>
+            <block s='reportNewList'>
+              <list>
+                <block s='xPosition'/>
+                <block s='yPosition'/>
+              </list>
+            </block>
+          </block>
+        </block>
+      </script>
+    </block-definition>
+  </blocks>
+  <variables>
+    <variable name='score'>
+      <l>2</l>
+    </variable>
+    <variable name='trail'>
+      <list id='289'>
+        <item>
+          <list id='290' struct='atomic'>10,-10</list>
+        </item>
+        <item>
+          <list id='291' struct='atomic'>10,-30</list>
+        </item>
+        <item>
+          <list id='292' struct='atomic'>10,-50</list>
+        </item>
+        <item>
+          <list id='293' struct='atomic'>10,-70</list>
+        </item>
+        <item>
+          <list id='294' struct='atomic'>10,-90</list>
+        </item>
+        <item>
+          <list id='295' struct='atomic'>10,-110</list>
+        </item>
+        <item>
+          <list id='296' struct='atomic'>-230,-150</list>
+        </item>
+        <item>
+          <list id='297' struct='atomic'>-210,-150</list>
+        </item>
+        <item>
+          <list id='298' struct='atomic'>-190,-150</list>
+        </item>
+        <item>
+          <list id='299' struct='atomic'>-170,-150</list>
+        </item>
+        <item>
+          <list id='300' struct='atomic'>-150,-150</list>
+        </item>
+        <item>
+          <list id='301' struct='atomic'>-130,-150</list>
+        </item>
+        <item>
+          <list id='302' struct='atomic'>-130,-130</list>
+        </item>
+        <item>
+          <list id='303' struct='atomic'>-130,-110</list>
+        </item>
+        <item>
+          <list id='304' struct='atomic'>-130,-90</list>
+        </item>
+      </list>
+    </variable>
+    <variable name='Lives'>
+      <l>4</l>
+    </variable>
+  </variables>
+</project><media name="Snake 1.0" app="Snap! 5.1, http://snap.berkeley.edu" version="1"></media></snapdata>

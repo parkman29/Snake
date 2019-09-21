@@ -1,0 +1,1904 @@
+<snapdata><project name='Snake 1.4' app='Snap! 5.1, http://snap.berkeley.edu' version='1'>
+  <notes>Classic snake game                                                                             Play by pressing the spacebar, move by using arrow keys or WASD, Activate AI by pressing M (in development, may not work).                                                                                              Changelog: 1.1 Added Sounds, 1.2 Moved music to its own sprite and added WASD control, 1.3 Added pause and stop and a highscore bar, 1.4 Added AI (still in development).</notes>
+  <thumbnail>data:image/png;base64,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</thumbnail>
+  <stage inheritance='true' id='1' volume='100' height='360' tempo='60' lines='round' width='480' name='Stage' sublistIDs='false' threadsafe='false' codify='false' color='255,255,255,1' scheduled='true' pan='0' ternary='true' costume='0'>
+    <pentrails>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAFoCAYAAACPNyggAAAOhUlEQVR4Xu3VwQkAAAjEMN1/abewn7jAQRC64wgQIECAAIF3gX1fNEiAAAECBAiMAHsCAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQIHLFxAWmhEwHPAAAAAElFTkSuQmCC</pentrails>
+    <costumes>
+      <list id='2' struct='atomic'/>
+    </costumes>
+    <sounds>
+      <list id='3' struct='atomic'/>
+    </sounds>
+    <variables/>
+    <blocks/>
+    <scripts/>
+    <sprites>
+      <sprite draggable='true' x='10' pen='tip' id='8' y='-110' name='Eraser' idx='3' volume='100' rotation='1' scale='1' color='0,104.65199999999999,137.70000000000002,1' hidden='true' pan='0' heading='90' costume='1'>
+        <costumes>
+          <list id='9'>
+            <item>
+              <costume center-x='12.5' image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAAOklEQVRIS2NkYGBg+P///38QTU3ACAK0MBjmyFHDsUbXaLCMBgvx+Xg0tYymltHUQnwIDEBqoWUFDQDROlfH38EQsgAAAABJRU5ErkJggg==' center-y='11.75' name='square' id='10'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='11' struct='atomic'/>
+        </sounds>
+        <blocks/>
+        <variables/>
+        <scripts>
+          <script x='20' y='20'>
+            <block s='receiveMessage'>
+              <l>follow!</l>
+            </block>
+            <block s='setScale'>
+              <l>100</l>
+            </block>
+            <block s='hide'/>
+            <block s='doForever'>
+              <script>
+                <block s='doWaitUntil'>
+                  <block s='reportGreaterThan'>
+                    <block s='reportListLength'>
+                      <block var='trail'/>
+                    </block>
+                    <block s='reportSum'>
+                      <block s='reportProduct'>
+                        <block var='Score'/>
+                        <l>1</l>
+                      </block>
+                      <l>5</l>
+                    </block>
+                  </block>
+                </block>
+                <block s='gotoXY'>
+                  <block s='reportListItem'>
+                    <l>1</l>
+                    <block s='reportListItem'>
+                      <l>
+                        <option>last</option>
+                      </l>
+                      <block var='trail'/>
+                    </block>
+                  </block>
+                  <block s='reportListItem'>
+                    <l>
+                      <option>last</option>
+                    </l>
+                    <block s='reportListItem'>
+                      <l>
+                        <option>last</option>
+                      </l>
+                      <block var='trail'/>
+                    </block>
+                  </block>
+                </block>
+                <block s='doStamp'/>
+                <block s='doDeleteFromList'>
+                  <l>
+                    <option>last</option>
+                  </l>
+                  <block var='trail'/>
+                </block>
+              </script>
+            </block>
+          </script>
+        </scripts>
+      </sprite>
+      <sprite draggable='true' x='50' pen='tip' id='55' y='-30' name='Target' idx='2' volume='100' rotation='1' scale='0.8' color='119.95200000000001,214.2,0,1' heading='90' pan='0' instrument='1' costume='1'>
+        <costumes>
+          <list id='56'>
+            <item>
+              <costume center-x='12.5' image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAAPElEQVRIS2NkYGBg2KzP8B9EUxP4XmRgZKSFwTBHjhqONbpGg2U0WIjPx6OpZTS1jKYW4kNgAFILLStoADX0K6sMlP9qAAAAAElFTkSuQmCC' center-y='11.75' name='square' id='57'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='58' struct='atomic'/>
+        </sounds>
+        <blocks>
+          <block-definition s='go to random position' category='motion' type='command'>
+            <header/>
+            <code/>
+            <translations/>
+            <inputs/>
+            <script>
+              <block s='gotoXY'>
+                <block s='reportDifference'>
+                  <block s='reportProduct'>
+                    <block s='reportRandom'>
+                      <l>-11</l>
+                      <l>12</l>
+                    </block>
+                    <l>20</l>
+                  </block>
+                  <l>10</l>
+                </block>
+                <block s='reportDifference'>
+                  <block s='reportProduct'>
+                    <block s='reportRandom'>
+                      <l>-8</l>
+                      <l>9</l>
+                    </block>
+                    <l>20</l>
+                  </block>
+                  <l>10</l>
+                </block>
+              </block>
+            </script>
+          </block-definition>
+        </blocks>
+        <variables/>
+        <scripts>
+          <script x='20' y='20'>
+            <block s='receiveOnClone'/>
+            <block s='hide'/>
+          </script>
+          <script x='20' y='86'>
+            <block s='receiveKey'>
+              <l>
+                <option>m</option>
+              </l>
+            </block>
+            <block s='doForever'>
+              <script>
+                <block s='doSetVar'>
+                  <l>TargetX</l>
+                  <block s='xPosition'/>
+                </block>
+                <block s='doSetVar'>
+                  <l>TargetY</l>
+                  <block s='yPosition'/>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='209'>
+            <block s='receiveMessage'>
+              <l>set goal</l>
+            </block>
+            <block s='setScale'>
+              <l>80</l>
+            </block>
+            <custom-block s='go to random position' scope='local'/>
+            <block s='doUntil'>
+              <block s='reportOr'>
+                <block s='reportNot'>
+                  <custom-block s='touching trail?'/>
+                </block>
+                <block s='reportNot'>
+                  <block s='reportOr'>
+                    <block s='reportEquals'>
+                      <block var='HeadY'/>
+                      <block var='TargetY'/>
+                    </block>
+                    <block s='reportEquals'>
+                      <block var='HeadX'/>
+                      <block var='TargetX'/>
+                    </block>
+                  </block>
+                </block>
+              </block>
+              <script>
+                <custom-block s='go to random position' scope='local'/>
+              </script>
+            </block>
+            <block s='doSetInstrument'>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>72</l>
+              <l>0.1</l>
+            </block>
+          </script>
+        </scripts>
+      </sprite>
+      <sprite draggable='true' x='10' pen='tip' id='132' y='-130' name='Head' idx='1' volume='100' rotation='1' scale='0.8' color='80,80,80,1' heading='0' pan='0' instrument='4' costume='1'>
+        <costumes>
+          <list id='133'>
+            <item>
+              <costume center-x='11' image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAYAAAAvg9c4AAAANElEQVRIS2NkYDjvwEBlwMjAcP8/lc1kGDV0NEypnKZGk9RokhpNUtQMgaGVo/ZT0+sgswCzqygcksr76AAAAABJRU5ErkJggg==' center-y='11.75' name='square' id='134'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='135' struct='atomic'/>
+        </sounds>
+        <blocks/>
+        <variables/>
+        <scripts>
+          <script x='20' y='20'>
+            <block s='doSetVar'>
+              <l>trail</l>
+              <block s='reportNewList'>
+                <list/>
+              </block>
+            </block>
+          </script>
+          <script x='20' y='60'>
+            <block s='receiveKey'>
+              <l>
+                <option>m</option>
+              </l>
+            </block>
+            <block s='doForever'>
+              <script>
+                <block s='doIf'>
+                  <block s='reportGreaterThan'>
+                    <block var='TargetX'/>
+                    <block s='xPosition'/>
+                  </block>
+                  <script>
+                    <block s='setHeading'>
+                      <l>90</l>
+                    </block>
+                  </script>
+                </block>
+                <block s='doIf'>
+                  <block s='reportLessThan'>
+                    <block var='TargetX'/>
+                    <block s='xPosition'/>
+                  </block>
+                  <script>
+                    <block s='setHeading'>
+                      <l>-90</l>
+                    </block>
+                  </script>
+                </block>
+                <block s='doIf'>
+                  <block s='reportEquals'>
+                    <block var='TargetX'/>
+                    <block s='xPosition'/>
+                  </block>
+                  <script>
+                    <block s='doFaceTowards'>
+                      <l>Target</l>
+                    </block>
+                  </script>
+                </block>
+                <block s='doSetVar'>
+                  <l>HeadX</l>
+                  <block s='xPosition'/>
+                </block>
+                <block s='doSetVar'>
+                  <l>HeadY</l>
+                  <block s='yPosition'/>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='352'>
+            <block s='receiveKey'>
+              <l>
+                <option>space</option>
+              </l>
+            </block>
+            <block s='clear'/>
+            <block s='doSetVar'>
+              <l>Score</l>
+              <l>0</l>
+            </block>
+            <block s='doSetVar'>
+              <l>Pause</l>
+              <l>0</l>
+            </block>
+            <block s='doSetVar'>
+              <l>Lives</l>
+              <l>5</l>
+            </block>
+            <block s='doDeleteFromList'>
+              <l>
+                <option>all</option>
+              </l>
+              <block var='trail'/>
+            </block>
+            <block s='setScale'>
+              <l>80</l>
+            </block>
+            <block s='gotoXY'>
+              <l>10</l>
+              <l>-130</l>
+            </block>
+            <block s='setHeading'>
+              <l>0</l>
+            </block>
+            <block s='doInsertInList'>
+              <block s='reportNewList'>
+                <list>
+                  <block s='xPosition'/>
+                  <block s='yPosition'/>
+                </list>
+              </block>
+              <l>1</l>
+              <block var='trail'/>
+            </block>
+            <block s='doStamp'/>
+            <block s='doBroadcastAndWait'>
+              <l>set goal</l>
+            </block>
+            <block s='doBroadcast'>
+              <l>follow!</l>
+            </block>
+            <block s='doForever'>
+              <script>
+                <block s='forward'>
+                  <l>20</l>
+                </block>
+                <block s='doIfElse'>
+                  <block s='reportOr'>
+                    <block s='reportTouchingObject'>
+                      <l>
+                        <option>edge</option>
+                      </l>
+                    </block>
+                    <custom-block s='touching trail?'/>
+                  </block>
+                  <script>
+                    <block s='clear'/>
+                    <block s='doDeleteFromList'>
+                      <l>
+                        <option>all</option>
+                      </l>
+                      <block var='trail'/>
+                    </block>
+                    <block s='gotoXY'>
+                      <l>10</l>
+                      <l>-130</l>
+                    </block>
+                    <block s='setHeading'>
+                      <l>0</l>
+                    </block>
+                    <block s='doChangeVar'>
+                      <l>Lives</l>
+                      <l>-1</l>
+                    </block>
+                    <block s='doSetInstrument'>
+                      <l>4</l>
+                    </block>
+                    <block s='doPlayNote'>
+                      <l>48</l>
+                      <l>0.5</l>
+                    </block>
+                    <block s='doIf'>
+                      <block s='reportEquals'>
+                        <block var='Lives'/>
+                        <l>0</l>
+                      </block>
+                      <script>
+                        <block s='clear'/>
+                        <block s='doSetVar'>
+                          <l>Score</l>
+                          <l>0</l>
+                        </block>
+                        <block s='doSetVar'>
+                          <l>Lives</l>
+                          <l>5</l>
+                        </block>
+                        <block s='doDeleteFromList'>
+                          <l>
+                            <option>all</option>
+                          </l>
+                          <block var='trail'/>
+                        </block>
+                        <block s='setScale'>
+                          <l>80</l>
+                        </block>
+                        <block s='gotoXY'>
+                          <l>10</l>
+                          <l>-130</l>
+                        </block>
+                        <block s='setHeading'>
+                          <l>0</l>
+                        </block>
+                        <block s='doSayFor'>
+                          <l>Gameover</l>
+                          <l>2</l>
+                        </block>
+                        <block s='doSetInstrument'>
+                          <l>3</l>
+                        </block>
+                        <block s='doPlayNote'>
+                          <l>49</l>
+                          <l>0.5</l>
+                        </block>
+                      </script>
+                    </block>
+                  </script>
+                  <script>
+                    <block s='doInsertInList'>
+                      <block s='reportNewList'>
+                        <list>
+                          <block s='xPosition'/>
+                          <block s='yPosition'/>
+                        </list>
+                      </block>
+                      <l>1</l>
+                      <block var='trail'/>
+                    </block>
+                    <block s='doStamp'/>
+                    <block s='doIf'>
+                      <block s='reportTouchingObject'>
+                        <l>Target</l>
+                      </block>
+                      <script>
+                        <block s='doBroadcastAndWait'>
+                          <l>set goal</l>
+                        </block>
+                        <block s='doChangeVar'>
+                          <l>Score</l>
+                          <l>1</l>
+                        </block>
+                      </script>
+                    </block>
+                  </script>
+                </block>
+                <block s='doIf'>
+                  <block s='reportEquals'>
+                    <block var='Pause'/>
+                    <l>1</l>
+                  </block>
+                  <script>
+                    <block s='doWaitUntil'>
+                      <block s='reportEquals'>
+                        <block var='Pause'/>
+                        <l>0</l>
+                      </block>
+                    </block>
+                  </script>
+                </block>
+                <block s='doIf'>
+                  <block s='reportLessThan'>
+                    <block var='High Score'/>
+                    <block var='Score'/>
+                  </block>
+                  <script>
+                    <block s='doSetVar'>
+                      <l>High Score</l>
+                      <block var='Score'/>
+                    </block>
+                  </script>
+                </block>
+                <block s='doIf'>
+                  <block s='reportEquals'>
+                    <block var='Score'/>
+                    <l>20</l>
+                  </block>
+                  <script>
+                    <block s='createClone'>
+                      <l>Target</l>
+                    </block>
+                    <block s='doSetVar'>
+                      <l>Score</l>
+                      <l>21</l>
+                    </block>
+                    <block s='doSetVar'>
+                      <l>Lives</l>
+                      <l>10</l>
+                    </block>
+                  </script>
+                </block>
+                <block s='doIf'>
+                  <block s='reportEquals'>
+                    <block var='Score'/>
+                    <l>40</l>
+                  </block>
+                  <script>
+                    <block s='createClone'>
+                      <l>Target</l>
+                    </block>
+                    <block s='doSetVar'>
+                      <l>Score</l>
+                      <l>41</l>
+                    </block>
+                    <block s='doSetVar'>
+                      <l>Lives</l>
+                      <l>15</l>
+                    </block>
+                  </script>
+                </block>
+                <block s='doIf'>
+                  <block s='reportEquals'>
+                    <block var='Score'/>
+                    <l>60</l>
+                  </block>
+                  <script>
+                    <block s='createClone'>
+                      <l>Target</l>
+                    </block>
+                    <block s='doSetVar'>
+                      <l>Score</l>
+                      <l>61</l>
+                    </block>
+                    <block s='doSetVar'>
+                      <l>Lives</l>
+                      <l>20</l>
+                    </block>
+                  </script>
+                </block>
+                <block s='doIf'>
+                  <block s='reportEquals'>
+                    <block var='Score'/>
+                    <l>80</l>
+                  </block>
+                  <script>
+                    <block s='createClone'>
+                      <l>Target</l>
+                    </block>
+                    <block s='doSetVar'>
+                      <l>Score</l>
+                      <l>81</l>
+                    </block>
+                    <block s='doSetVar'>
+                      <l>Lives</l>
+                      <l>25</l>
+                    </block>
+                  </script>
+                </block>
+                <block s='doWait'>
+                  <block s='reportQuotient'>
+                    <l>.3</l>
+                    <block s='reportSum'>
+                      <block var='Score'/>
+                      <l>1</l>
+                    </block>
+                  </block>
+                </block>
+                <block s='doIf'>
+                  <block s='reportEquals'>
+                    <block var='Score'/>
+                    <l>100</l>
+                  </block>
+                  <script>
+                    <block s='bubble'>
+                      <l>you won!</l>
+                    </block>
+                    <block s='doDeleteFromList'>
+                      <l>
+                        <option>all</option>
+                      </l>
+                      <block var='trail'/>
+                    </block>
+                    <block s='doSetVar'>
+                      <l>Score</l>
+                      <l>0</l>
+                    </block>
+                  </script>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='1931'>
+            <block s='receiveKey'>
+              <l>
+                <option>up arrow</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>180</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>0</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='2043'>
+            <block s='receiveKey'>
+              <l>
+                <option>w</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>180</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>0</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='2155'>
+            <block s='receiveKey'>
+              <l>
+                <option>down arrow</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>0</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>180</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='2267'>
+            <block s='receiveKey'>
+              <l>
+                <option>s</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>0</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>180</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='2379'>
+            <block s='receiveKey'>
+              <l>
+                <option>right arrow</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>-90</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>90</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='2491'>
+            <block s='receiveKey'>
+              <l>
+                <option>d</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>-90</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>90</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='2603'>
+            <block s='receiveKey'>
+              <l>
+                <option>left arrow</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>90</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>-90</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='2715'>
+            <block s='receiveKey'>
+              <l>
+                <option>a</option>
+              </l>
+            </block>
+            <block s='doIf'>
+              <block s='reportNot'>
+                <block s='reportEquals'>
+                  <block s='direction'/>
+                  <l>90</l>
+                </block>
+              </block>
+              <script>
+                <block s='setHeading'>
+                  <l>-90</l>
+                </block>
+              </script>
+            </block>
+          </script>
+        </scripts>
+      </sprite>
+      <sprite draggable='false' x='171' pen='tip' id='532' y='-138.99999999999994' name='Play' idx='4' volume='100' rotation='1' scale='0.1' color='80,80,80,1' hidden='true' pan='0' heading='90' costume='1'>
+        <costumes>
+          <list id='533'>
+            <item>
+              <costume center-x='61.5' image='data:image/png;base64,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' center-y='75.5' name='costume1' id='534'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='535' struct='atomic'/>
+        </sounds>
+        <blocks/>
+        <variables/>
+        <scripts>
+          <script x='20' y='20'>
+            <block s='receiveMessage'>
+              <l>Pause</l>
+            </block>
+            <block s='show'/>
+          </script>
+          <script x='20' y='90'>
+            <block s='receiveKey'>
+              <l>
+                <option>space</option>
+              </l>
+            </block>
+            <block s='setScale'>
+              <l>10</l>
+            </block>
+            <block s='hide'/>
+          </script>
+          <script x='20' y='181'>
+            <block s='receiveInteraction'>
+              <l>
+                <option>clicked</option>
+              </l>
+            </block>
+            <block s='doSetVar'>
+              <l>Pause</l>
+              <l>0</l>
+            </block>
+            <block s='doBroadcast'>
+              <l>Play</l>
+            </block>
+            <block s='hide'/>
+          </script>
+        </scripts>
+      </sprite>
+      <sprite x='171' pen='tip' id='555' y='-139' name='Pause' idx='5' volume='100' rotation='1' scale='0.1' heading='90' costume='1' color='80,80,80,1' pan='0' draggable='false'>
+        <costumes>
+          <list id='556'>
+            <item>
+              <costume center-x='45' image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAACMCAYAAAD8z74wAAACoElEQVR4Xu3V0QnCQBQF0U1nWrl2pqQAAzM+YZHJ950lOYZ4rLVua6/rOXw7WzzfsdZ6DT/Yt8ed9zR5bfF8QU/+pBdnBR30mECfjg+UfaPH3rHrg4IO2gv0Z+jtUBk04vLjoL0dKoNGXH4ctLdDZdCIy4+D9naoDBpx+XHQ3g6VQSMuPw7a26EyaMTlx0F7O1QGjbj8OGhvh8qgEZcfB+3tUBk04vLjoL0dKoNGXH4ctLdDZdCIy4+D9naoDBpx+XHQ3g6VQSMuPw7a26EyaMTlx0F7O1QGjbj8OGhvh8qgEZcfB+3tUBk04vLjoL0dKoNGXH4ctLdDZdCIy4+D9naoDBpx+XHQ3g6VQSMuPw7a26EyaMTlx0F7O1QGjbj8OGhvh8qgEZcfB+3tUBk04vLjoL0dKoNGXH4ctLdDZdCIy4+D9naoDBpx+XHQ3g6VQSMuPw7a26EyaMTlx0F7O1QGjbj8OGhvh8qgEZcfB+3tUBk04vLjoL0dKoNGXH4ctLdDZdCIy4+D9naoDBpx+XHQ3g6VQSMuPw7a26EyaMTlx0F7O1QGjbj8OGhvh8qgEZcfB+3tUBk04vLjoL0dKoNGXH4ctLdDZdCIy4+D9naoDBpx+XHQ3g6VQSMuPw7a26EyaMTlx0F7O1QGjbj8OGhvh8qgEZcfB+3tUBk04vLjoL0dKoNGXH4ctLdDZdCIy4+D9naoDBpx+XHQ3g6VQSMuPw7a26EyaMTlx0F7O1QGjbj8OGhvh8qgEZcfB+3tUBk04vLjoL0dKoNGXH4ctLdDZdCIy4+D9naoDBpx+XHQ3g6VQSMuPw7a26EyaMTlx0F7O1QGjbj8OGhvh8qgEZcfB+3tUBk04vLjE/rh85+U9+FTX8PnqeNO6H+/tniR3igUFhGeA9a9AAAAAElFTkSuQmCC' center-y='70' name='costume1' id='557'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='558' struct='atomic'/>
+        </sounds>
+        <blocks/>
+        <variables/>
+        <scripts>
+          <script x='20' y='20'>
+            <block s='receiveMessage'>
+              <l>Play</l>
+            </block>
+            <block s='show'/>
+          </script>
+          <script x='20' y='90'>
+            <block s='receiveKey'>
+              <l>
+                <option>space</option>
+              </l>
+            </block>
+            <block s='setScale'>
+              <l>10</l>
+            </block>
+            <block s='gotoXY'>
+              <l>171</l>
+              <l>-139</l>
+            </block>
+            <block s='show'/>
+          </script>
+          <script x='20' y='202'>
+            <block s='receiveInteraction'>
+              <l>
+                <option>clicked</option>
+              </l>
+            </block>
+            <block s='doSetVar'>
+              <l>Pause</l>
+              <l>1</l>
+            </block>
+            <block s='doBroadcast'>
+              <l>Pause</l>
+            </block>
+            <block s='hide'/>
+          </script>
+        </scripts>
+      </sprite>
+      <sprite x='-5' id='581' y='151' volume='100' rotation='1' scale='1' instrument='4' draggable='false' pen='tip' hidden='true' name='Music' idx='7' heading='90' pan='0' color='80.7839999999999,0,183.6,1' costume='1'>
+        <costumes>
+          <list id='582'>
+            <item>
+              <costume center-x='240' image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAFoCAYAAACPNyggAAAOhUlEQVR4Xu3VwQkAAAjEMN1/abewn7jAQRC64wgQIECAAIF3gX1fNEiAAAECBAiMAHsCAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQIHLFxAWmhEwHPAAAAAElFTkSuQmCC' center-y='180' name='Untitled' id='583'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='584' struct='atomic'/>
+        </sounds>
+        <blocks/>
+        <variables/>
+        <scripts>
+          <script x='20' y='20'>
+            <block s='receiveKey'>
+              <l>
+                <option>space</option>
+              </l>
+            </block>
+            <block s='hide'/>
+          </script>
+          <script x='20' y='90'>
+            <block s='receiveKey'>
+              <l>
+                <option>3</option>
+              </l>
+            </block>
+            <block s='doSetInstrument'>
+              <l>1</l>
+            </block>
+            <block s='doRepeat'>
+              <l>4</l>
+              <script>
+                <block s='doPlayNote'>
+                  <l>60</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>64</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>67</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>64</l>
+                  <l>0.5</l>
+                </block>
+              </script>
+            </block>
+            <block s='doSetInstrument'>
+              <l>2</l>
+            </block>
+            <block s='doRepeat'>
+              <l>4</l>
+              <script>
+                <block s='doPlayNote'>
+                  <l>60</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>64</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>67</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>64</l>
+                  <l>0.5</l>
+                </block>
+              </script>
+            </block>
+            <block s='doSetInstrument'>
+              <l>3</l>
+            </block>
+            <block s='doRepeat'>
+              <l>4</l>
+              <script>
+                <block s='doPlayNote'>
+                  <l>60</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>64</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>67</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>64</l>
+                  <l>0.5</l>
+                </block>
+              </script>
+            </block>
+            <block s='doSetInstrument'>
+              <l>4</l>
+            </block>
+            <block s='doRepeat'>
+              <l>4</l>
+              <script>
+                <block s='doPlayNote'>
+                  <l>60</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>64</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>67</l>
+                  <l>0.5</l>
+                </block>
+                <block s='doPlayNote'>
+                  <l>64</l>
+                  <l>0.5</l>
+                </block>
+              </script>
+            </block>
+          </script>
+          <script x='20' y='682'>
+            <block s='receiveKey'>
+              <l>
+                <option>2</option>
+              </l>
+            </block>
+            <block s='doSetInstrument'>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>1</l>
+            </block>
+            <block s='doSetInstrument'>
+              <l>2</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>1</l>
+            </block>
+            <block s='doSetInstrument'>
+              <l>3</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>1</l>
+            </block>
+            <block s='doSetInstrument'>
+              <l>4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>1</l>
+            </block>
+          </script>
+          <script x='20' y='2918'>
+            <block s='receiveKey'>
+              <l>
+                <option>1</option>
+              </l>
+            </block>
+            <block s='doSetInstrument'>
+              <l>1</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>59</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>59</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doSetInstrument'>
+              <l>2</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>59</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>59</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doSetInstrument'>
+              <l>3</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>59</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>59</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doSetInstrument'>
+              <l>4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>59</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.4</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>55</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>67</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>59</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>57</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>65</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>64</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>62</l>
+              <l>0.5</l>
+            </block>
+            <block s='doPlayNote'>
+              <l>60</l>
+              <l>0.5</l>
+            </block>
+          </script>
+        </scripts>
+      </sprite>
+      <sprite x='190' pen='tip' id='1285' y='-139' name='Stop' idx='6' volume='100' rotation='1' scale='0.15' heading='90' costume='1' color='80,80,80,1' pan='0' draggable='true'>
+        <costumes>
+          <list id='1286'>
+            <item>
+              <costume center-x='50' image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABhCAYAAAAgLwTnAAABzElEQVR4Xu3cwWkCYRgG4c+TdVhJ0lm0M1PJ1uEtEMLiEgM56ShPTt4c33H84YfsbmaOM/M2/goLfO5+hHwUaDDMiZDWt+CXkNPlMGq5o6T9MqeZdfOtkMvhjiTeal1gv6wvCSl8LwgpWLhiIISQ2AIxHIUQElsghqMQQmILxHAUQkhsgRiOQgiJLRDDUQghsQViOAohJLZADEchhMQWiOEohJDYAjEchRASWyCGoxBCYgvEcBRCSGyBGI5CCIktEMNRCCGxBWI4CiEktkAMRyGExBaI4SiEkNgCMRyFEBJbIIajEEJiC8RwFEJIbIEYjkIIiS0Qw1FIV8hx87wsTwN6jCmFPGb3P9+VEEJiC8RwFNIV4lAvuFFIwcIVw5UQhRTcKKRg4XYhnkpacKOQggWFxCwQQkh3gRiZM4SQ2AIxHIUQElsghqMQQmILxHAU0hXitrfgRiEFC65OYhYIeQohzpCCJmdIwYKfrJgFQgjpLhAjc4YQElsghqMQQmILxHAUQkhsgRiOQgiJLRDDUUhXiNveghuFFCzcvlxUSMGNQgoW/nP9PjPny2HeY7wvjbNf5jyzbr79l7aX/uTP8eEIiXn6PtT9RIWsfAErYUqprVpM6wAAAABJRU5ErkJggg==' center-y='48.5' name='costume1' id='1287'/>
+            </item>
+          </list>
+        </costumes>
+        <sounds>
+          <list id='1288' struct='atomic'/>
+        </sounds>
+        <blocks/>
+        <variables/>
+        <scripts>
+          <script x='20' y='20'>
+            <block s='receiveKey'>
+              <l>
+                <option>space</option>
+              </l>
+            </block>
+            <block s='setScale'>
+              <l>15</l>
+            </block>
+          </script>
+          <script x='20' y='93'>
+            <block s='receiveInteraction'>
+              <l>
+                <option>clicked</option>
+              </l>
+            </block>
+            <block s='doStopThis'>
+              <l>
+                <option>all</option>
+              </l>
+            </block>
+          </script>
+        </scripts>
+      </sprite>
+      <watcher hidden='true' x='10' s='xPosition' style='normal' color='74,108,212' y='10' scope='Head'/>
+      <watcher hidden='true' x='10' s='yPosition' style='normal' color='74,108,212' y='31.00000199999998' scope='Head'/>
+      <watcher hidden='true' x='10' s='xPosition' style='normal' color='74,108,212' y='52.00000399999999' scope='Play'/>
+      <watcher hidden='true' x='10' s='yPosition' style='normal' color='74,108,212' y='73.00000599999998' scope='Play'/>
+      <watcher hidden='true' x='222' s='reportMouseX' style='normal' color='4,148,220' y='117.000002' scope='Stage'/>
+      <watcher hidden='true' x='222' s='reportMouseY' style='normal' color='4,148,220' y='75.99999999999999' scope='Stage'/>
+      <watcher x='15' color='243,118,29' style='normal' hidden='true' y='33.00000399999999' var='Pause'/>
+      <watcher x='4.000000000000114' color='243,118,29' style='normal' y='2.0000020000000234' var='Score'/>
+      <watcher x='396' color='243,118,29' style='normal' y='0.9999999999999716' var='Lives'/>
+      <watcher x='190' color='243,118,29' style='normal' y='-0.9999920000000202' var='High Score'/>
+      <watcher x='10' color='243,118,29' style='normal' hidden='true' y='94.00000799999998' var='TargetX'/>
+      <watcher x='10' color='243,118,29' style='normal' hidden='true' y='115.00000999999997' var='TargetY'/>
+      <watcher x='10' color='243,118,29' style='normal' hidden='true' y='136.00001199999997' var='HeadX'/>
+      <watcher x='10' color='243,118,29' style='normal' hidden='true' y='157.00001399999996' var='HeadY'/>
+    </sprites>
+  </stage>
+  <hidden/>
+  <headers/>
+  <code/>
+  <blocks>
+    <block-definition s='touching trail?' category='sensing' type='predicate'>
+      <header/>
+      <code/>
+      <translations/>
+      <inputs/>
+      <script>
+        <block s='doReport'>
+          <block s='reportListContainsItem'>
+            <block var='trail'/>
+            <block s='reportNewList'>
+              <list>
+                <block s='xPosition'/>
+                <block s='yPosition'/>
+              </list>
+            </block>
+          </block>
+        </block>
+      </script>
+    </block-definition>
+  </blocks>
+  <variables>
+    <variable name='trail'>
+      <list id='1330' struct='atomic'/>
+    </variable>
+    <variable name='Pause'>
+      <l>0</l>
+    </variable>
+    <variable name='High Score'>
+      <l>71</l>
+    </variable>
+    <variable name='Score'>
+      <l>0</l>
+    </variable>
+    <variable name='Lives'>
+      <l>5</l>
+    </variable>
+    <variable name='TargetX'>
+      <l>-90</l>
+    </variable>
+    <variable name='TargetY'>
+      <l>-110</l>
+    </variable>
+    <variable name='HeadX'>
+      <l>-30</l>
+    </variable>
+    <variable name='HeadY'>
+      <l>-130</l>
+    </variable>
+  </variables>
+</project><media name="Snake 1.4" app="Snap! 5.1, http://snap.berkeley.edu" version="1"></media></snapdata>
